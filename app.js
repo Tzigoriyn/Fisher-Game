@@ -21,7 +21,7 @@ function attachEvents() {
             captureTime: captureTime.value
         }
 
-        return fishers
+        return fishers;
     }
 
     addBtn.addEventListener('click', () => {
@@ -42,7 +42,7 @@ function attachEvents() {
     });
 
     loadBtn.addEventListener("click", () => {
-        let id = divId.id
+        let id = divId.id;
 
         if (id !== "") {
             //Use load btn to reload the fisherman list
@@ -80,7 +80,7 @@ function attachEvents() {
                         //Clone the element div that we need
                         let coloneDiv = catchesDiv.cloneNode(true);
                         //Append to HTML tree
-                        mainDiv.appendChild(coloneDiv)
+                        mainDiv.appendChild(coloneDiv);
                     });
                 //Chek and delete first div Elemet that we clone
                 if (id === "" || Array.from(mainDiv.childNodes)[1].id !== id) {
@@ -98,7 +98,7 @@ function attachEvents() {
                 updateBtn.map((x) => x.addEventListener("click", (e) => { fisherUpdate(e) }));
                 deleteBtn.map((x) => x.addEventListener("click", (e) => { fisherDelete(e) }));
             })
-            .catch((e) => alert('Data for fishermen inexistent!!!'))
+            .catch((e) => alert('Data for fishermen inexistent!!!'));
             //If no data on the server DB
 
     });
