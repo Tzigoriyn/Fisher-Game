@@ -5,7 +5,7 @@ function attachEvents() {
 
     let mainDiv = document.getElementById("main");
     let catchesDiv = document.getElementById("catches");
-    //Haid first element that we have in HTML code
+    //Hide first element that we have in HTML code
     catchesDiv.style.display = "none";
     let divId = document.querySelector("#catches .catch");
     //destructure the input elements in the load area
